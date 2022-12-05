@@ -26,7 +26,9 @@ function App() {
       setIsUpdate(false)
     }
     else {
-      setData([...data, value])
+      if (value) {
+        setData([...data, value])
+      }
       setValue('')
 
     }
